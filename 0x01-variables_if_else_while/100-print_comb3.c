@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
  * main - prints all possible double digit combinations
+ * Description: double digits
  * return: 0 if successful
  */
 int main(void)
