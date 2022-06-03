@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - prints all possible double digit combinations
+ * main - Prints numbers between 00 to 89
  * Description: double digits
  * return: 0 if successful
  */
