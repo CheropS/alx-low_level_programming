@@ -1,17 +1,18 @@
 #include <stdio.h>
 /**
- *  * main - Entry point
- *   *
- *    * Return: Always 0 (Success)
+ *  * main - Prints the alpabet in lower case
+ *  followed by a new line
+ *  Return: Always 0 (Success)
  */
 
 int main(void)
 {
+	char ch;
 
-	char c;
-		for (c = 'a'; c <= 'z'; c++)
-			putchar(c);
-			putchar('\n');
-
-		return (0);
+	for (ch = 'a'; ch <= 'z'; ch++)
+	{
+		putchar(ch);
+	}
+		putchar('\n');
+	return (0);
 }
