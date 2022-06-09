@@ -10,7 +10,7 @@ void times_table(void)
 	int row, col;
 	int mult = 0;
 
-	for (row = 0; row < 10; col++)
+	for (row = 0; row < 10; row++)
 	{
 		mult = (row * col);
 		if (mult < 10)
