@@ -2,14 +2,15 @@
 
 /**
  * print_numbers - prints numbers from 0 to 9 followed by a new line
+ * Return: 0 if successful
  */
 
 void print_numbers(void)
 {
-	int num;
+	int w;
 
-	for (num = 0; num <= 9; num++)
-		_putchar((num % 10) + '0');
+	for (w = 0; w <= 9; w++)
+		_putchar((w);
 
 	_putchar('\n');
 }
