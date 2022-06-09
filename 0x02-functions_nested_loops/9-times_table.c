@@ -12,24 +12,27 @@ void times_table(void)
 
 	for (row = 0; row < 10; row++)
 	{
-		mult = (row * col);
-		if (mult < 10)
+		for (col = 0; col < 10; col++)
 		{
-			if (col != 0)
+			mult = (row * col);
+			if (mult < 10)
+			{
+				if (col != 0)
+				{
+					_putchar(' ');
+					_putchar(' ');
+				}
+				_putchar(mult + '0');
+			}
+			else
 			{
 				_putchar(' ');
-				_putchar(' ');
+				_putchar((mult / 10 + '0'));
+				_putchar((mult % 10) + '0');
 			}
-			_putchar(mult + '0');
+			if (col != 9)
+				_putchar(',');
 		}
-		else
-		{
-			_putchar(' ');
-			_putchar((mult / 10 + '0'));
-			_putchar((mult % 10) + '0');
-		}
-		if (col != 9)
-			_putchar(',');
+		_putchar('\n');
 	}
-	_putchar('\n');
 }
