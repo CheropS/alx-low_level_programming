@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * Main - Prints the string _putchar
+ * Main - function that Prints the string _putchar
  * Description: program that prints putchar followed by a new line
  * Return: 0 if success
  */
