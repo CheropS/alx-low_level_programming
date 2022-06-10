@@ -18,7 +18,7 @@ void print_square(int size)
 				_putchar('#');
 			if (sq1 == size - 1)
 				continue;
-			_putchar('\n')
+			_putchar('\n');
 		}
 	}
 
