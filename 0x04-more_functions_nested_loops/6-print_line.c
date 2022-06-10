@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_line - prints shortest distance between two points
+ * print_line - prints shortest distance using the character _.
  * @n: the number of _ characters to be printed
  * Return: always 0
  */
