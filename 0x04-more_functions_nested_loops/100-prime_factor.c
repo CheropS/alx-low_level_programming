@@ -17,7 +17,8 @@ int main(void)
 		{
 		printf("%d\n", b);
 			break;
+		}
 	}
+
 	return (0);
 }
-
