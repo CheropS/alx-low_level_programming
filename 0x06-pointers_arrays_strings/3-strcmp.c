@@ -4,8 +4,8 @@
 
 /**
  * _strcmp - compares two strings
- * s1: first integer
- * s2: second integer
+ * @s1: first integer
+ * @s2: second integer
  * Return: if str1 == str2, 0.
  */
 
