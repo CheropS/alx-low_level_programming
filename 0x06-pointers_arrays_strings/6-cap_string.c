@@ -1,37 +1,39 @@
+
 #include "main.h"
-#include <stdio.h>
-#include <string.h>
 
 /**
- * cap_string - capitalizes all words in a string
- * @s: string to be caitalized
- * Return: uppercase string.
+ * cap_string - Capitalizes all words of a string.
+ * @b: The string to be capitalized.
+ *
+ * Return: A pointer to the changed string.
  */
-
 char *cap_string(char *b)
 {
-    int w, x;
-	int cap = 32;
-	int separators[] = {',', ';', '.', '?', '"',
-		'(', ')', '{', '}', ' ', '\n', '\t'};
+	int base = 0;
 
-	for (w = 0; b[w] != '\0'; w++)
+	while (b[base])
 	{
-		if (b[w] >= 'a' && b[w] <= 'z')
-		{
-			b[w] = b[w] - cap;
-		}
+		while (!(b[base] >= 'a' && b[base] <= 'z'))
+			base++;
 
-		cap = 0;
+		if (b[base - 1] == ' ' ||
+		    b[base - 1] == '\t' ||
+		    b[base - 1] == '\n' ||
+		    b[base - 1] == ',' ||
+		    b[base - 1] == ';' ||
+		    b[base - 1] == '.' ||
+		    b[base - 1] == '!' ||
+		    b[base - 1] == '?' ||
+		    b[base - 1] == '"' ||
+		    b[base - 1] == '(' ||
+		    b[base - 1] == ')' ||
+		    b[base - 1] == '{' ||
+		    b[base - 1] == '}' ||
+		    base == 0)
+			b[base] -= 32;
 
-		for (x = 0; x <= 12; x++)
-		{
-			if (b[w] == separators[x])
-			{
-				x = 12;
-				cap = 32;
-			}
-		}
+		base++;
 	}
 
+	return (b);
 }
