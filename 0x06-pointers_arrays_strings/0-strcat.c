@@ -3,7 +3,7 @@
 #include <string.h>
 
 /**
- * _strcat - Concatenates the string pointed to by @src.
+ * *_strcat - Concatenates the string pointed to by @src.
  * @dest: A pointer to the string to be concatenated upon.
  * @src: The source string to be appended to @dest.
  *
