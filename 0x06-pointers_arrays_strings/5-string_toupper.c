@@ -3,13 +3,13 @@
 
 /**
  * *string_toupper - changes all lowercase to uppercase
- * @s: string to be changed
+ * @b: string to be changed
  * Return: Always 0
  */
 
 char *string_toupper(char *b)
 {
-    int base = 0;
+	int base = 0;
 
 	while (b[base])
 	{
