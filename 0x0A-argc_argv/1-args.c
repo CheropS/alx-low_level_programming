@@ -11,10 +11,8 @@
 
 int main(int argc, char *argv[])
 {
-	int w;
-
-	for (w = 0; w < argc; w++)
-		printf("%s\n", argv[w]);
+	(void) argv;
+	printf("%i\n", argc - 1);
 
 	return (0);
 }
