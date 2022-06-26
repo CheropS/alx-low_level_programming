@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include "main.h"
+
 
 /**
  * Main - prints its name followed by a new line
