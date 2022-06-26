@@ -3,7 +3,7 @@
 
 
 /**
- * Main - prints its name followed by a new line
+ * main - prints its name followed by a new line
  * @argc: count argument
  * @argv: arguments
  * Return: Always 0.
