@@ -1,4 +1,4 @@
-#include "main.h"
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -9,18 +9,21 @@
  * Return: always 0, error return 1.
  */
 
-int main(argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int a, digit, sum = 0;
 
-	for (digit = 0; argv[a][digit]; digit++)
+	for (a = 1; a < argc; a++)
 	{
-		if (argv[a][digit] < '0' || argv[a][digit] > '9')
-		{
-			printf("Error\n");
-			return (1);
-		}
-	}
 
-	sum += atoi(argv[a]);
+		for (digit = 0; argv[a][digit]; digit++)
+		{
+			if (argv[a][digit] < '0' || argv[a][digit] > '9')
+			{
+				printf("Error\n");
+				return (1);
+			}
+		}
+
+		sum += atoi(argv[a]);
 }
