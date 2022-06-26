@@ -1,15 +1,15 @@
-
 #include <stdio.h>
 #include <stdlib.h>
 
 /**
- * main - prints the min number of coins to make change
- * @argc: count arguments
+ * main - Prints the minimum number of coins to
+ *	make change for an amount of money
+ * @argc: argument count
  * @argv: arguments
- * Return: error 1 otherwise 0.
+ * Return: 0 if success, 1 if error
  */
 
-int main(int argc, int char *argv[])
+int main(int argc, char *argv[])
 {
 	int cents, coins = 0;
 
@@ -29,7 +29,7 @@ int main(int argc, int char *argv[])
 			cents -= 25;
 			continue;
 		}
-		if ((cents - 10) >= 10)
+		if ((cents - 10) >= 0)
 		{
 			cents -= 10;
 			continue;
@@ -47,7 +47,7 @@ int main(int argc, int char *argv[])
 		cents--;
 	}
 
-	print("%d\n", coins);
+	printf("%d\n", coins);
+
 	return (0);
 }
-
