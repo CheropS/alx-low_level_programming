@@ -10,23 +10,24 @@
 
 char *_strdup(char *str)
 {
-	int a, end;
-	char *array;
+	char *duplicate;
+	int index, len = 0;
 
 	if (str == NULL)
 		return (NULL);
 
-	for (end = 0; end <= *str; end++)
-	{
-	}
+	for (index = 0; str[index]; index++)
+		len++;
 
-	end += 1;
-	array = malloc(sizeof(char) * end);
+	duplicate = malloc(sizeof(char) * (len + 1));
 
-	for (a = 0; a < end; a++)
-		array[a] = str[a];
-
-	if (array == NULL)
+	if (duplicate == NULL)
 		return (NULL);
-	return (array);
+
+	for (index = 0; str[index]; index++)
+		duplicate[index] = str[index];
+
+	duplicate[len] = '\0';
+
+	return (duplicate);
 }
