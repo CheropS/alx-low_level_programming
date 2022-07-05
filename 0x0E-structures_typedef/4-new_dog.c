@@ -1,4 +1,4 @@
-#incude "dog.h"
+#include "dog.h"
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -30,7 +30,7 @@ char *_copy(char *src)
 		return (NULL);
 	}
 
-	for (a = 0, src[a] != '\0'; a++)
+	for (a = 0; src[a] != '\0'; a++)
 	{
 		ptr[a] = src[a];
 	}
@@ -68,7 +68,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	(*bosco).age = age;
 
-	new_owner = copy(owner);
+	new_owner = _copy(owner);
 	if (new_owner == NULL)
 	{
 		free((*bosco).name);
