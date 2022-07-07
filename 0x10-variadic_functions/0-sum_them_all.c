@@ -6,7 +6,6 @@
 /**
  * sum_them_all - function that returns the sum of parameters
  * @n: number of integer
- * @sum: sum of parameters
  * Return: Always 0.
  */
 
