@@ -1,5 +1,7 @@
 #include "lists.h"
-#include <stdlio.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
 
 /**
  * *add_node - function that adds a new node at the beg list
@@ -29,7 +31,7 @@ list_t *add_node(list_t **head, const char *str)
 		len++;
 
 	new->str = cpy;
-	new-> = len;
+	new->len = len;
 	new->next = *head;
 
 	*head = new;
