@@ -82,7 +82,6 @@ int main(int argc, char *argv[])
 			free(base);
 			exit(98);
 		}
-		
 		w = write(to, base, r);
 		if (to == -1 || w == -1)
 		{
