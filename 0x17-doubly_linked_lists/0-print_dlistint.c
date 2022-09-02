@@ -1,3 +1,5 @@
+#include "lists.h"
+
 /**
  * print_dlistint- prints all the elements of a list
  * @h: head of the dlistint_t list
