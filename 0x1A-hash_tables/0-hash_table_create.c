@@ -12,16 +12,16 @@ hash_table_t *hash_table_create(unsigned long int size)
 	hash_table_t *ht;
 	unsigned long int a;
 
-	tbl = malloc(sizeof(hash_table_t));
+	ht = malloc(sizeof(hash_table_t));
 	if (ht == NULL)
 		return (NULL);
 
-	tbl->size = size;
-	tbl->array = malloc(sizeof(hash_node_t *) * size);
-	if (tbl->array == NULL)
+	ht->size = size;
+	ht->array = malloc(sizeof(hash_node_t *) * size);
+	if (ht->array == NULL)
 		return (NULL);
 	for (a = 0; a < size; a++)
-		tbl->array[i] = NULL;
+		ht->array[i] = NULL;
 
-	return (tbl);
+	return (ht);
 }
